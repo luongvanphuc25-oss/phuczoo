@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - [Họ và Tên]</title>
+  <title>CV - Lường Văn Phúc</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --primary: #2563eb;
@@ -76,26 +72,11 @@
       color: var(--text-light);
     }
 
-    .contact a {
-      color: var(--primary);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .contact a { color: var(--primary); text-decoration: none; transition: color 0.2s; }
+    .contact a:hover { color: var(--primary-dark); text-decoration: underline; }
+    .contact-item { display: flex; align-items: center; gap: 6px; }
 
-    .contact a:hover {
-      color: var(--primary-dark);
-      text-decoration: underline;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    section {
-      margin-bottom: 32px;
-    }
+    section { margin-bottom: 32px; }
 
     .section-title {
       font-size: 1.125rem;
@@ -109,11 +90,7 @@
       letter-spacing: 0.05em;
     }
 
-    .summary {
-      color: var(--text-light);
-      font-size: 1rem;
-      line-height: 1.7;
-    }
+    .summary { color: var(--text-light); font-size: 1rem; line-height: 1.7; }
 
     .experience-item, .education-item, .project-item {
       margin-bottom: 20px;
@@ -122,9 +99,7 @@
       transition: border-color 0.2s;
     }
 
-    .experience-item:hover, .project-item:hover {
-      border-left-color: var(--primary);
-    }
+    .experience-item:hover, .project-item:hover { border-left-color: var(--primary); }
 
     .item-header {
       display: flex;
@@ -135,27 +110,10 @@
       gap: 12px;
     }
 
-    .item-title {
-      font-size: 1.0625rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .item-org {
-      font-weight: 500;
-      color: var(--primary);
-    }
-
-    .item-date {
-      font-size: 0.875rem;
-      color: var(--text-light);
-      white-space: nowrap;
-    }
-
-    .item-location {
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
+    .item-title { font-size: 1.0625rem; font-weight: 600; color: var(--text); }
+    .item-org { font-weight: 500; color: var(--primary); }
+    .item-date { font-size: 0.875rem; color: var(--text-light); white-space: nowrap; }
+    .item-location { font-size: 0.875rem; color: var(--text-light); }
 
     .item-description {
       color: var(--text-light);
@@ -164,14 +122,8 @@
       margin-top: 8px;
     }
 
-    .item-description ul {
-      margin-left: 20px;
-      margin-top: 8px;
-    }
-
-    .item-description li {
-      margin-bottom: 4px;
-    }
+    .item-description ul { margin-left: 20px; margin-top: 8px; }
+    .item-description li { margin-bottom: 4px; }
 
     .skills-grid {
       display: grid;
@@ -186,18 +138,9 @@
       border: 1px solid var(--border);
     }
 
-    .skill-category-name {
-      font-weight: 600;
-      font-size: 0.875rem;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
+    .skill-category-name { font-weight: 600; font-size: 0.875rem; color: var(--text); margin-bottom: 8px; }
 
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
     .skill-tag {
       background: var(--primary);
@@ -208,36 +151,16 @@
       font-weight: 500;
     }
 
-    .skill-tag.soft {
-      background: var(--accent);
-    }
+    .skill-tag.soft { background: var(--accent); }
 
-    .languages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
+    .languages { display: flex; flex-wrap: wrap; gap: 16px; }
 
-    .language-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .language-name {
-      font-weight: 500;
-    }
-
-    .language-level {
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
+    .language-item { display: flex; align-items: center; gap: 8px; }
+    .language-name { font-weight: 500; }
+    .language-level { font-size: 0.875rem; color: var(--text-light); }
 
     @media print {
-      body {
-        padding: 0;
-        max-width: none;
-      }
+      body { padding: 0; max-width: none; }
       .header { border-bottom-color: #000; }
       .section-title { border-bottom-color: #000; }
       .experience-item, .project-item { border-left-color: #000; }
@@ -256,68 +179,65 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="name">[Họ và Tên Của Bạn]</h1>
-    <p class="title">[Chức danh / Vị trí mong muốn - Ví dụ: Senior Software Engineer]</p>
+    <h1 class="name">Lường Văn Phúc</h1>
+    <p class="title">Fresh Graduate / Junior Developer • 21 tuổi</p>
     <div class="contact">
-      <span class="contact-item">📍 [Thành phố, Quốc gia]</span>
-      <a class="contact-item" href="tel:+84xxxxxxxxx">📞 [Số điện thoại]</a>
-      <a class="contact-item" href="mailto:email@example.com">✉️ [Email]</a>
-      <a class="contact-item" href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
-      <a class="contact-item" href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
-      <a class="contact-item" href="https://yourportfolio.com" target="_blank">🌐 Portfolio</a>
+      <span class="contact-item">📍 Thái Nguyên, Việt Nam</span>
+      <a class="contact-item" href="mailto:luongvanphuc@email.com">✉️ luongvanphuc@email.com</a>
+      <a class="contact-item" href="https://linkedin.com/in/luongvanphuc" target="_blank">💼 LinkedIn</a>
+      <a class="contact-item" href="https://github.com/luongvanphuc" target="_blank">💻 GitHub</a>
+      <a class="contact-item" href="https://luongvanphuc.dev" target="_blank">🌐 Portfolio</a>
     </div>
   </header>
 
   <section>
     <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
     <p class="summary">
-      [Viết 2-3 câu tóm tắt về kinh nghiệm, kỹ năng chính và mục tiêu nghề nghiệp của bạn.
-      Ví dụ: "Kỹ sư phần mềm với 5+ năm kinh nghiệm phát triển ứng dụng web full-stack,
-      chuyên về React, Node.js và AWS. Đam mê xây dựng sản phẩm có tác động, tối ưu hiệu năng
-      và trải nghiệm người dùng. Tìm kiếm vị trí Senior/Lead để đóng góp và phát triển."]
+      Sinh viên năm cuối / Tốt nghiệp mới chuyên ngành Công nghệ Thông tin, 21 tuổi,
+      đam mê phát triển phần mềm và giải quyết vấn đề. Có nền tảng tốt về lập trình web
+      (HTML/CSS/JavaScript, React, Node.js) và cơ sở dữ liệu. Tìm kiếm vị trí Junior Developer
+      hoặc Internship để học hỏi, đóng góp và phát triển kỹ năng trong môi trường chuyên nghiệp.
     </p>
   </section>
 
   <section>
-    <h2 class="section-title">Kinh nghiệm làm việc</h2>
+    <h2 class="section-title">Kinh nghiệm thực tập & Dự án</h2>
 
     <article class="experience-item">
       <div class="item-header">
         <div>
-          <span class="item-title">[Chức danh - Ví dụ: Senior Software Engineer]</span>
-          <span class="item-org"> | [Tên công ty]</span>
-        </div>
-        <span class="item-date">[Tháng/Năm] – [Tháng/Năm hoặc Hiện tại]</span>
-      </div>
-      <div class="item-location">📍 [Thành phố, Quốc gia] / Remote</div>
-      <div class="item-description">
-        <ul>
-          <li>[Thành tựu chính 1 - Sử dụng số liệu cụ thể: "Tăng hiệu năng 40%", "Giảm chi phí 30%"]</li>
-          <li>[Thành tựu chính 2 - Công nghệ sử dụng, quy mô dự án, vai trò của bạn]</li>
-          <li>[Thành tựu chính 3 - Lãnh đạo, mentoring, cải tiến quy trình, v.v.]</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="experience-item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">[Chức danh - Ví dụ: Software Engineer]</span>
-          <span class="item-org"> | [Tên công ty]</span>
+          <span class="item-title">Thực tập sinh lập trình viên</span>
+          <span class="item-org"> | [Tên công ty thực tập]</span>
         </div>
         <span class="item-date">[Tháng/Năm] – [Tháng/Năm]</span>
       </div>
-      <div class="item-location">📍 [Thành phố, Quốc gia]</div>
+      <div class="item-location">📍 Thái Nguyên, Việt Nam / Remote</div>
       <div class="item-description">
         <ul>
-          <li>[Thành tựu chính 1]</li>
-          <li>[Thành tựu chính 2]</li>
-          <li>[Thành tựu chính 3]</li>
+          <li>Hỗ trợ phát triển và bảo trì tính năng cho ứng dụng web nội bộ sử dụng React/Node.js</li>
+          <li>Viết unit test, fix bug và tối ưu hiệu năng các API hiện có</li>
+          <li>Tham gia code review, học quy trình CI/CD và làm việc theo Agile/Scrum</li>
         </ul>
       </div>
     </article>
 
-    <!-- Thêm thêm experience-item nếu cần -->
+    <article class="experience-item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Nhóm trưởng dự án tốt nghiệp</span>
+          <span class="item-org"> | Trường Đại học Công nghệ Thông tin và Truyền thông</span>
+        </div>
+        <span class="item-date">[Tháng/Năm] – [Tháng/Năm]</span>
+      </div>
+      <div class="item-location">📍 Thái Nguyên, Việt Nam</div>
+      <div class="item-description">
+        <ul>
+          <li>Điều phối nhóm 4-5 người xây dựng [Tên đề tài - ví dụ: Hệ thống quản lý sinh viên / E-commerce]</li>
+          <li>Phân chia công việc, theo dõi tiến độ, đảm bảo chất lượng code và deadline</li>
+          <li>Kết quả: [Đạt điểm A / Giải khuyến khích / Triển khai thực tế]</li>
+        </ul>
+      </div>
+    </article>
   </section>
 
   <section>
@@ -325,26 +245,40 @@
 
     <article class="project-item">
       <div class="item-header">
-        <span class="item-title">[Tên dự án]</span>
+        <span class="item-title">[Tên dự án 1 - Ví dụ: Website bán hàng / Todo App / Blog cá nhân]</span>
         <span class="item-date">[Tháng/Năm]</span>
       </div>
       <div class="item-description">
-        <strong>Công nghệ:</strong> [React, Node.js, PostgreSQL, Docker, AWS, v.v.]<br>
-        <strong>Mô tả:</strong> [Mô tả ngắn gọn dự án, vấn đề giải quyết, kết quả đạt được]<br>
-        <strong>Vai trò:</strong> [Vai trò của bạn trong dự án]<br>
-        <a href="[Link demo/source code]" target="_blank">🔗 Xem dự án</a>
+        <strong>Công nghệ:</strong> React, TypeScript, Node.js, Express, MongoDB<br>
+        <strong>Mô tả:</strong> Xây dựng ứng dụng full-stack cho phép người dùng [mô tả chức năng chính].<br>
+        <strong>Vai trò:</strong> Full-stack Developer (Frontend + Backend + Database)<br>
+        <a href="[Link GitHub/Deploy]" target="_blank">🔗 Xem source code</a>
       </div>
     </article>
 
     <article class="project-item">
       <div class="item-header">
-        <span class="item-title">[Tên dự án]</span>
+        <span class="item-title">[Tên dự án 2 - Ví dụ: Hệ thống quản lý task / Chat realtime]</span>
         <span class="item-date">[Tháng/Năm]</span>
       </div>
       <div class="item-description">
-        <strong>Công nghệ:</strong> [Stack công nghệ]<br>
-        <strong>Mô tả:</strong> [Mô tả dự án]<br>
-        <a href="[Link demo/source code]" target="_blank">🔗 Xem dự án</a>
+        <strong>Công nghệ:</strong> Vue.js, Firebase, Tailwind CSS<br>
+        <strong>Mô tả:</strong> Ứng dụng real-time cho phép [mô tả chức năng], sử dụng Firebase Auth & Firestore.<br>
+        <strong>Vai trò:</strong> Frontend Developer<br>
+        <a href="[Link GitHub/Deploy]" target="_blank">🔗 Xem demo</a>
+      </div>
+    </article>
+
+    <article class="project-item">
+      <div class="item-header">
+        <span class="item-title">[Tên dự án 3 - Ví dụ: Portfolio cá nhân / Clone trang web nổi tiếng]</span>
+        <span class="item-date">[Tháng/Năm]</span>
+      </div>
+      <div class="item-description">
+        <strong>Công nghệ:</strong> Next.js, Tailwind CSS, Vercel<br>
+        <strong>Mô tả:</strong> Trang portfolio responsive, tối ưu SEO, deploy trên Vercel.<br>
+        <strong>Vai trò:</strong> Independent Developer<br>
+        <a href="[Link GitHub/Deploy]" target="_blank">🔗 Xem dự án</a>
       </div>
     </article>
   </section>
@@ -355,9 +289,11 @@
       <div class="skill-category">
         <div class="skill-category-name">Frontend</div>
         <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript (ES6+)</span>
           <span class="skill-tag">React</span>
           <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Next.js</span>
           <span class="skill-tag">Tailwind CSS</span>
           <span class="skill-tag">Vue.js</span>
         </div>
@@ -366,29 +302,31 @@
         <div class="skill-category-name">Backend</div>
         <div class="skill-tags">
           <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Go</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Redis</span>
-          <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL/PostgreSQL</span>
         </div>
       </div>
       <div class="skill-category">
-        <div class="skill-category-name">DevOps & Cloud</div>
+        <div class="skill-category-name">Công cụ & Khác</div>
         <div class="skill-tags">
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Kubernetes</span>
-          <span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Docker (cơ bản)</span>
+          <span class="skill-tag">Linux (cơ bản)</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Figma (cơ bản)</span>
         </div>
       </div>
       <div class="skill-category">
         <div class="skill-category-name">Kỹ năng mềm</div>
         <div class="skill-tags">
           <span class="skill-tag soft">Giao tiếp</span>
-          <span class="skill-tag soft">Lãnh đạo</span>
+          <span class="skill-tag soft">Làm việc nhóm</span>
           <span class="skill-tag soft">Giải quyết vấn đề</span>
-          <span class="skill-tag soft">Mentoring</span>
+          <span class="skill-tag soft">Học nhanh</span>
+          <span class="skill-tag soft">Quản lý thời gian</span>
           <span class="skill-tag soft">Agile/Scrum</span>
         </div>
       </div>
@@ -400,22 +338,34 @@
 
     <article class="education-item">
       <div class="item-header">
-        <span class="item-title">[Tên bằng cấp - Ví dụ: Kỹ sư Khoa học Máy tính]</span>
-        <span class="item-date">[Năm tốt nghiệp]</span>
+        <span class="item-title">Kỹ sư Công nghệ Thông tin / Khoa học Máy tính</span>
+        <span class="item-date">2024 (Dự kiến)</span>
       </div>
-      <div class="item-org">[Tên trường Đại học / Cao đẳng]</div>
-      <div class="item-location">📍 [Thành phố, Quốc gia]</div>
+      <div class="item-org">Trường Đại học Công nghệ Thông tin và Truyền thông (ICTU)</div>
+      <div class="item-location">📍 Thái Nguyên, Việt Nam</div>
       <div class="item-description">
-        [GPA (nếu tốt), chuyên ngành, hoạt động ngoại khóa, dự án cuối khóa, v.v.]
+        <ul>
+          <li>GPA: [X.X/4.0 hoặc X.X/10] - [Loại: Khá/Giỏi/Xuất sắc]</li>
+          <li>Chuyên ngành: Phát triển phần mềm / Hệ thống thông tin / AI</li>
+          <li>Hoạt động: [CLB lập trình / Hội sinh viên / Đồ án nghiên cứu / Hackathon]</li>
+          <li>Đồ án tốt nghiệp: [Tên đề tài - mô tả ngắn 1 dòng]</li>
+        </ul>
       </div>
     </article>
 
     <article class="education-item">
       <div class="item-header">
-        <span class="item-title">[Chứng chỉ / Khóa học - Ví dụ: AWS Solutions Architect]</span>
-        <span class="item-date">[Năm]</span>
+        <span class="item-title">Chứng chỉ / Khóa học trực tuyến</span>
+        <span class="item-date">2023 - 2024</span>
       </div>
-      <div class="item-org">[Tổ chức cấp]</div>
+      <div class="item-org">Coursera / edX / FreeCodeCamp / Google / Meta</div>
+      <div class="item-description">
+        <ul>
+          <li>[Tên khóa học 1 - ví dụ: Meta Front-End Developer Certificate]</li>
+          <li>[Tên khóa học 2 - ví dụ: Google IT Automation with Python]</li>
+          <li>[Tên khóa học 3 - ví dụ: FreeCodeCamp JavaScript Algorithms]</li>
+        </ul>
+      </div>
     </article>
   </section>
 
@@ -428,16 +378,17 @@
       </div>
       <div class="language-item">
         <span class="language-name">Tiếng Anh</span>
-        <span class="language-level">IELTS [Điểm] / TOEIC [Điểm] / Chuyển nghiệp</span>
+        <span class="language-level">TOEIC [Điểm - ví dụ: 650+] / IELTS [Điểm - ví dụ: 5.5+] / Đọc hiểu tài liệu kỹ thuật tốt</span>
       </div>
-      <!-- Thêm ngôn ngữ khác nếu có -->
     </div>
   </section>
 
   <section>
     <h2 class="section-title">Sở thích & Hoạt động</h2>
     <p class="summary">
-      [Ví dụ: Đọc sách công nghệ, viết blog kỹ thuật, đóng góp open source, chạy bộ, du lịch, chơi game, v.v.]
+      Đọc sách công nghệ & blog kỹ thuật (dev.to, Medium, Viblo), viết blog chia sẻ kiến thức,
+      tham gia Hackathon / Coding Contest, đóng góp open source, nghe podcast công nghệ,
+      chơi game, đá bóng, tập gym, du lịch phượt.
     </p>
   </section>
 
